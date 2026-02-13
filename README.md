@@ -17,8 +17,8 @@ The system provides:
 
 All data is stored in the browser using Local Storage for fast and simple daily operations.
 
---- 
----
+
+
 
 ## 🛠️ Tech Stack
 
@@ -35,7 +35,7 @@ All data is stored in the browser using Local Storage for fast and simple daily 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ---
 bus-booking-system/
 │
@@ -46,11 +46,9 @@ bus-booking-system/
 │ │ ├── SeatMap/
 │ │ ├── Layout/
 │ │ └── common/
-│ │
-│ ├── context/
-│ │ └── BookingContext.jsx
-│ │
-│ ├── utils/
+│ │ ├── context/
+│ │ │ └── BookingContext.jsx
+│ │ └── utils/
 │ │ ├── constants.js
 │ │ ├── localStorage.js
 │ │ ├── validation.js
@@ -64,13 +62,11 @@ bus-booking-system/
 │ └── index.js
 │
 ├── package.json
-├──package-lock.json  
+├── package-lock.json
 └── README.md
-
-
 ---
 ---
-## ⚙️ Prerequisites
+## Prerequisites
 
 Make sure the following are installed:
 
@@ -80,7 +76,7 @@ Make sure the following are installed:
 
 ---
 
-## 📥 Installation & Setup
+##  Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
@@ -88,25 +84,28 @@ Make sure the following are installed:
 git clone <your-repository-url>
 cd bus-booking-system
 
-## ⚙️ Installation & Setup
+```
+## Installation & Setup
 
 ### 2️⃣ Install Dependencies
 
 ```bash
 npm install
-
-## ▶️ Run the Application
+```
+##  Run the Application
 
 ```bash
 npm start
+```
 
-```The application will run at:
+The application will run at:
+```bash
+http://localhost:3000 
+```
 
-http://localhost:3000
+## How to Use the Application
 
-## ▶️ How to Use the Application
-
-### 🎟️ Create Booking
+### Create Booking
 
 - Select travel date  
 - Enter a valid 10-digit Indian mobile number  
@@ -116,7 +115,7 @@ http://localhost:3000
 
 ---
 
-### 📋 View Bookings & Track Boarding
+### View Bookings & Track Boarding
 
 - Go to **Bookings tab**  
 - View all bookings for the selected date  
@@ -125,7 +124,7 @@ http://localhost:3000
 
 ---
 
-### ✏️ Edit Booking
+### Edit Booking
 
 - Click **Edit**  
 - Update seat selection  
@@ -133,14 +132,14 @@ http://localhost:3000
 
 ---
 
-### ❌ Cancel Booking
+###  Cancel Booking
 
 - Click **Cancel**  
 - Confirm the cancellation  
 
 ---
 
-## 🧠 Optimal Boarding Algorithm
+##  Optimal Boarding Algorithm
 
 To minimize total boarding time:
 
@@ -157,9 +156,9 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-## 📊 Features
+##  Features
 
-### 🎟️ Booking Management
+### Booking Management
 
 - Unique Booking ID generation  
 - Seat availability validation  
@@ -168,7 +167,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-### 📈 Boarding Dashboard
+### Boarding Dashboard
 
 - Total bookings  
 - Total passengers  
@@ -178,7 +177,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-### ⏱️ Time Comparison
+### Time Comparison
 
 - Natural boarding time  
 - Optimal boarding time  
@@ -186,7 +185,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-### 🔍 Search & Sorting
+### Search & Sorting
 
 **Search by:**
 
@@ -202,7 +201,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-### 📱 Responsive Design
+### Responsive Design
 
 - Mobile  
 - Tablet  
@@ -210,7 +209,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-### ♿ Accessibility
+###  Accessibility
 
 - ARIA labels  
 - Keyboard navigation  
@@ -218,7 +217,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-## 💾 Data Storage
+##  Data Storage
 
 - Uses **Browser Local Storage**  
 - No backend required  
@@ -226,7 +225,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-## ⚡ Performance Optimizations
+## Performance Optimizations
 
 - React.memo for seat rendering  
 - useCallback for event handlers  
@@ -235,7 +234,7 @@ This avoids passenger blocking inside the bus.
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - User authentication  
 - Multiple bus routes  
