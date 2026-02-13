@@ -1,6 +1,6 @@
-# 🚌 Bus Ticket Booking & Boarding Management System
+# Bus Ticket Booking & Boarding Management System
 
-## 📌 Project Overview
+## Project Overview
 
 The Bus Ticket Booking and Boarding Management System is a React-based web application designed to help bus conductors manage daily passenger bookings and optimize the boarding process.
 
@@ -17,13 +17,7 @@ The system provides:
 
 All data is stored in the browser using Local Storage for fast and simple daily operations.
 
----
-
-## 🚀 Live Application
-
-🔗 **Live URL:**  
-https://003j7.app.super.myninja.ai
-
+--- 
 ---
 
 ## 🛠️ Tech Stack
@@ -42,7 +36,7 @@ https://003j7.app.super.myninja.ai
 ---
 
 ## 📂 Project Structure
-
+---
 bus-booking-system/
 │
 ├── src/
@@ -75,7 +69,7 @@ bus-booking-system/
 
 
 ---
-
+---
 ## ⚙️ Prerequisites
 
 Make sure the following are installed:

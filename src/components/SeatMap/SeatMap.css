@@ -1,0 +1,292 @@
+/* Seat Map Component Styles */
+
+/* Seat Container */
+.seat-map {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Seat Header */
+.seat-map__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.seat-map__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+}
+
+.seat-map__count {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #FF9500;
+}
+
+/* Bus Front Indicator */
+.seat-map__front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.seat-map__driver {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #5B9FF9;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.seat-map__driver svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.seat-map__door {
+  color: #5B9FF9;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Seat Grid */
+.seat-map__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.seat-map__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.seat-map__aisle {
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Seat Button */
+.seat {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 6px;
+  border: 1.5px solid #e0e0e0;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+}
+
+.seat:hover:not(:disabled) {
+  transform: scale(1.1);
+  border-color: #5B9FF9;
+  box-shadow: 0 4px 12px rgba(91, 159, 249, 0.3);
+  z-index: 1;
+}
+
+.seat:focus-visible {
+  outline: 2px solid #5B9FF9;
+  outline-offset: 2px;
+}
+
+.seat:disabled {
+  cursor: not-allowed;
+}
+
+/* Seat States */
+.seat--available {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  color: #333333;
+}
+
+.seat--selected {
+  background-color: #FF9500;
+  border-color: #FF9500;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(255, 149, 0, 0.4);
+}
+
+.seat--selected:hover:not(:disabled) {
+  background-color: #e68600;
+  border-color: #e68600;
+}
+
+.seat--booked {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.seat--booked:hover {
+  transform: none;
+}
+
+/* Seat Label */
+.seat__label {
+  font-family: inherit;
+}
+
+/* Legend */
+.seat-map__legend {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.seat-map__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #666666;
+}
+
+.seat-map__legend-indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: 1.5px solid #e0e0e0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat-map__legend-indicator--available {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  color: #333333;
+}
+
+.seat-map__legend-indicator--selected {
+  background-color: #FF9500;
+  border-color: #FF9500;
+  color: #ffffff;
+}
+
+.seat-map__legend-indicator--booked {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: #999999;
+}
+
+/* Error Message */
+.seat-map__error {
+  background-color: #FFF5F5;
+  border: 1px solid #F44336;
+  color: #F44336;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seat-map {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .seat-map__header {
+    margin-bottom: 1rem;
+  }
+
+  .seat-map__title {
+    font-size: 1.125rem;
+  }
+
+  .seat-map__count {
+    font-size: 0.875rem;
+  }
+
+  .seat {
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 0.8125rem;
+  }
+
+  .seat-map__aisle {
+    width: 2rem;
+    font-size: 0.8125rem;
+  }
+
+  .seat-map__legend {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .seat-map__legend-item {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .seat-map__front {
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .seat-map__driver {
+    font-size: 0.8125rem;
+  }
+
+  .seat-map__driver svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .seat-map__door {
+    font-size: 0.8125rem;
+  }
+
+  .seat {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.75rem;
+    border-width: 1px;
+  }
+
+  .seat-map__aisle {
+    width: 1.5rem;
+  }
+}
