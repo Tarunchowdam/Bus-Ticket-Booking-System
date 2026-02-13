@@ -68,8 +68,6 @@ bus-booking-system/
 ├── package-lock.json
 └── README.md
 ```
-
----
 ---
 ## Prerequisites
 
