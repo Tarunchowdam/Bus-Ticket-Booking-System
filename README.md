@@ -37,33 +37,38 @@ All data is stored in the browser using Local Storage for fast and simple daily 
 
 ##  Project Structure
 ---
+# bus-booking-system
+
+```
 bus-booking-system/
 │
 ├── src/
-│ ├── components/
-│ │ ├── BookingForm/
-│ │ ├── BookingList/
-│ │ ├── SeatMap/
-│ │ ├── Layout/
-│ │ └── common/
-│ │ ├── context/
-│ │ │ └── BookingContext.jsx
-│ │ └── utils/
-│ │ ├── constants.js
-│ │ ├── localStorage.js
-│ │ ├── validation.js
-│ │ └── boardingAlgorithm.js
-│ │
-│ ├── pages/
-│ │ ├── BookingPage.jsx
-│ │ └── BoardingPage.jsx
-│ │
-│ ├── App.js
-│ └── index.js
+│   ├── components/
+│   │   ├── BookingForm/
+│   │   ├── BookingList/
+│   │   ├── SeatMap/
+│   │   ├── Layout/
+│   │   └── common/
+│   │       ├── context/
+│   │       │   └── BookingContext.jsx
+│   │       └── utils/
+│   │           ├── constants.js
+│   │           ├── localStorage.js
+│   │           ├── validation.js
+│   │           └── boardingAlgorithm.js
+│   │
+│   ├── pages/
+│   │   ├── BookingPage.jsx
+│   │   └── BoardingPage.jsx
+│   │
+│   ├── App.js
+│   └── index.js
 │
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
+
 ---
 ---
 ## Prerequisites
